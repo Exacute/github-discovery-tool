@@ -1,0 +1,158 @@
+.result-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+  margin-bottom: 20px;
+}
+
+.result-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.repo-name {
+  margin: 0;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.repo-name a {
+  color: #667eea;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.repo-name a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+.language-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.repo-description {
+  color: #666;
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+}
+
+.card-meta {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #666;
+  font-size: 0.95em;
+}
+
+.meta-icon {
+  font-size: 1.2em;
+}
+
+.meta-value {
+  font-weight: 500;
+}
+
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.topic-pill {
+  background: #f0f0f0;
+  color: #555;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.85em;
+  border: 1px solid #ddd;
+}
+
+.card-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-view {
+  background: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.btn-view:hover {
+  background: #e0e0e0;
+  border-color: #bbb;
+}
+
+.btn-download {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-download:hover {
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-download:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .result-card {
+    padding: 16px;
+  }
+
+  .card-header {
+    flex-direction: column;
+  }
+
+  .card-meta {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .card-actions {
+    flex-direction: column;
+  }
+}
